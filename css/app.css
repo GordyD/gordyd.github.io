@@ -92,6 +92,10 @@ section {
   padding: 10px 20px 10px 20px;
 }
 
+section.top {
+  margin-top: 25px;
+}
+
 h1 {
   font-size: 2em;
   color: #193441;
