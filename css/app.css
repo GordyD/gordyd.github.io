@@ -60,7 +60,7 @@ nav {
 }
 
 #menu-icon {
-  display: hidden;
+  display: none;
   width: 22px;
   height: 22px;
   text-align: center;
