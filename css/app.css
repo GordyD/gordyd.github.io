@@ -145,6 +145,10 @@ p.lead {
     width: 50%;
   }
 
+  nav ul li a {
+    color: #193441;
+  }
+
   nav li {
     text-align: center;
     width: 100%;
