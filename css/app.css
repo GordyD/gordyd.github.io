@@ -8,6 +8,7 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial;
   background: #f9f9f9;
   color: #555;
+  margin-top: 50px;
 }
 
 a {
@@ -81,11 +82,10 @@ li {
 }
 
 section {
-  margin: 80px auto 40px;
+  margin: 10px auto;
   max-width: 980px;
   position: relative;
-  padding: 10px
-
+  padding: 10px 20px 10px 20px;
 }
 
 h1 {
