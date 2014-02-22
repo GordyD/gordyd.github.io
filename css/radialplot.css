@@ -88,11 +88,3 @@
     stroke: #3E606F;
     stroke-width: 0.2;
 }
-
-svg {
-  width: 100%;
-}
-
-.plot svg {
-  height: 300px;
-}
