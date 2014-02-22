@@ -11,15 +11,18 @@ body {
   padding-top: 50px;
 }
 
-a {
+header a {
   color: #FCFFF5;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  color: #3E606F;
+header a.alt {
+  color: #D1DBBD;
+}
 
+a, a:hover {
+  color: #3E606F;
 }
 
 img {
