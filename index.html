@@ -14,12 +14,12 @@
                 <nav>
                         <a href="#" id="menu-icon"></a>
                         <ul>
-                                <li><a href="https://github.com/GordyD/angular-radial-plot" class="current">Github</a></li>
-                                <li><a href="#">Animation</a></li>
-                                <li><a href="#">Basic</a></li>
-                                <li><a href="#">Comparison</a></li>
-                                <li><a href="#">Editable</a></li>
-                                <li><a href="#">Logarithmic</a></li>
+                                <li><a href="https://github.com/GordyD/angular-radial-plot">Github</a></li>
+                                <li><a href="#animation">Animation</a></li>
+                                <li><a href="#basic">Basic</a></li>
+                                <li><a href="#comparison">Comparison</a></li>
+                                <li><a href="#editable">Editable</a></li>
+                                <li><a href="#logarithmic">Logarithmic</a></li>
                         </ul>
                 </nav>
         </header>
@@ -27,26 +27,26 @@
                 <p class="lead">Radial Plot (radar graph) was born out of me teaching myself D3 and building a graph component. I also wanted to play around with different ways to plot anf visualise data. This Angular.js directive was the result and this page serves as a demonstration of the features of this directive along with the simplicity of how to use it. Please go check out the source code and contribute. I'd love to extend this library to include other cool visualisations</p>
         </section>
         <section class="plot">
-                <h3>Animated</h3>
+                <h1 id="animation">Animated</h1>
                 <p>Show transitions from one plot to another</p>
                 <radial-plot dsn="dataset_a" point-radius="1.2" scale="log" editable="true" labelled="true" free="true" animate="true" play="others"></radial-plot>
         </section>
         <section class="plot">
-                <h3>Basic</h3>
+                <h1 id="basic">Basic</h1>
                 <radial-plot dsn="dataset_a" point-radius="1.2" labelled="true" free="true"></radial-plot>
         </section>
         <section class="plot">
-                <h3>Comparison</h3>
+                <h1 id="comparison">Comparison</h1>
                 <p>Show more than one plot on a graph</p>
                 <radial-plot dsn="dataset_a" point-radius="1.2" labelled="true" free="true" compare="dataset_b"></radial-plot>
         </section>
         <section class="plot">
-                <h3>Editable</h3>
+                <h1 id="editable">Editable</h1>
                 <p>Click on one of the dots and drag</p>
                 <radial-plot dsn="dataset_a" point-radius="1.2" editable="true" labelled="true" free="true"></radial-plot>
         </section>
         <section class="plot">
-                <h3>Logarithmic Scale</h3>
+                <h1 id="logarithmic">Logarithmic Scale</h1>
                 <radial-plot dsn="dataset_a" point-radius="1.2" scale="log" editable="true" labelled="true" free="true"></radial-plot>
         </section>
         

@@ -82,7 +82,7 @@ li {
 }
 
 section {
-  margin: 10px auto;
+  margin: 10px auto 0px;
   max-width: 980px;
   position: relative;
   padding: 10px 20px 10px 20px;
