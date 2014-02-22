@@ -92,7 +92,14 @@ h1 {
   font-size: 2em;
   color: #2262AD;
   line-height: 1.15em;
-  margin: 20px 0 ;
+  margin: 10px 0 ;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #2262AD;
+  line-height: 1.15em;
+  margin: 10px 0;
 }
 
 p {
