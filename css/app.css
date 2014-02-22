@@ -66,15 +66,14 @@ a:hover#menu-icon {
 }
 
 ul {
-
   list-style: none;
-
 }
 
 li {
   display: inline-block;
   float: left;
-  padding-right: 10px
+  padding-right: 10px;
+  font-size: 0.7em;
 }
 
 .current {
