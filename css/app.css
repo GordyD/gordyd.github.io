@@ -12,13 +12,13 @@ body {
 }
 
 a {
-  color: #3E606F;
-  text-decoration: underline;
+  color: #FCFFF5;
+  text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #FCFFF5;
+  color: #3E606F;
 
 }
 
@@ -33,7 +33,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 2px solid #4C9CF1;
+  border-bottom: 2px solid #3E606F;
   z-index: 100;
 }
 
