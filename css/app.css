@@ -37,6 +37,11 @@ header {
   z-index: 100;
 }
 
+header .container {
+  max-width: 980px;
+  position: relative;
+}
+
 #logo{
   margin: 10px;
   margin-left: 20px;
