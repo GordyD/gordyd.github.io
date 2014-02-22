@@ -8,7 +8,7 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial;
   background: #FCFFF5;
   color: #3E606F;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 a {
@@ -92,7 +92,7 @@ section {
   padding: 10px 20px 10px 20px;
 }
 
-section.intro {
+.intro {
   margin-top: 25px;
 }
 
