@@ -95,7 +95,7 @@
 
 .half-plot {
   width: 50%;
-  display: inline;
+  float: left;
 }
 
 .plot svg {
