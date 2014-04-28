@@ -38,8 +38,12 @@
                 <p>Show transitions from one plot to another. Once animation is complete you can interact with the data points by clicking on them. Both graphs show
                 the same dataset but using two different scales: linear and logarithmic. As they use the same dataset they both reflect one another's values.
                 </p>
-                <radial-plot dsn="dataset_a" point-radius="1.2" editable="true" labelled="true" free="true" animate="true" play="others"></radial-plot>
-                <radial-plot dsn="dataset_a" point-radius="1.2" scale="log" editable="true" labelled="true" free="true" animate="true" play="others"></radial-plot>
+                <div class="half-plot">
+                        <radial-plot dsn="dataset_a" point-radius="1.2" scale="log" editable="true" labelled="true" free="true" animate="true" play="others"></radial-plot>
+                </div>
+                <div class="half-plot">
+                        <radial-plot dsn="dataset_a" point-radius="1.2" editable="true" labelled="true" free="true" animate="true" play="others"></radial-plot>
+                </div>
         </section>
         <section class="plot">
                 <h2 id="basic">Basic</h2>
