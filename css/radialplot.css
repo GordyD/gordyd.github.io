@@ -1,14 +1,14 @@
 /** Radial Plot Styling */
 .centre {
     fill: white;
-    stroke: #193441;
+    stroke: #0099FF;
     stroke-width: 0.2;
 }
 
 .area {
-  fill: #193441;
+  fill: #0099FF;
   fill-opacity: 0.3;
-  stroke: #193441;
+  stroke: #0099FF;
   stroke-width: 0.2;
 }
 
@@ -26,12 +26,16 @@
   stroke-width: 0.2;
 }
 
+.interactive-arc {
+  fill-opacity: 0;
+}
+
 .invalid {
   color: #FF0000;
 }
 
 .point {
-  fill: #193441;
+  fill: #0099FF;
 }
 
 .point-invalid {
@@ -39,33 +43,33 @@
 }
 
 .axis {
-  stroke: #3E606F;
+  stroke: #666666;
   stroke-width: 0.3;
 }
 
 .increment-label {
     font-family: "Verdana", sans-serif;
     font-size: 2px;
-    fill: #3E606F;
+    fill: #666666;
 }
 
 .increment-a,.increment-a-outer {
-    fill: #FCFFF5;
+    fill: #E6E6E6;
     fill-opacity: 0.3;
-    stroke: #3E606F;
+    stroke: #666666;
     stroke-width: 0.2;
 }
 
 .increment-b, .increment-b-outer {
-    fill: #D1DBBD;
+    fill: white;
     fill-opacity: 0.3;
-    stroke: #3E606F;
+    stroke: #666666;
     stroke-width: 0.2;
 }
 
 .increment-a-outer, .increment-b-outer {
     stroke-width: 0.5;
-    stroke: #3E606F;
+    stroke: #666666;
     fill: none;
 }
 
@@ -83,13 +87,13 @@
 }
 
 .tooltip-box {
-    fill: #3E606F;
+    fill: #666666;
     fill-opacity: 0.6;
-    stroke: #3E606F;
+    stroke: #666666;
     stroke-width: 0.2;
 }
 
-.plot svg {
+svg {
   width: 100%;
 }
 
