@@ -92,70 +92,81 @@
         <script>
                 var app = angular.module('radialPlotExampleApp', ['ui.radialplot']);
                 app.controller('radialPlotCtrl', function($scope) {
-                        $scope.dataset_a =  [ 
-                                { id: 0 , name: "Apples" , value: 30 },
-                                { id: 1 , name: "Pears" , value: 50 },
-                                { id: 2 , name: "Lemons" , value: 20 },
-                                { id: 3 , name: "Limes" , value: 15 },
-                                { id: 4 , name: "Strawberries" , value: 55 },
-                                { id: 5 , name: "Raspberries" , value: 85 }
-                        ];
+                        $scope.dataset_a =  { 
+                                d0: { id: 0, name: 'Apples', value: 5 },
+                                d1: { id: 1, name: 'Pears', value: 5 },
+                                d2: { id: 2, name: 'Peaches', value: 5 },
+                                d3: { id: 3, name: 'Apricots', value: 5 },
+                                d4: { id: 4, name: 'Kiwis', value: 15 },
+                                d5: { id: 5, name: 'Mangos', value: 15 },
+                                d6: { id: 6, name: 'Bananas', value: 20 },
+                                d7: { id: 7, name: 'Strawberries', value: 5 },
+                                d8: { id: 8, name: 'Raspberries', value: 5 },
+                                d9: { id: 9, name: 'Blueberries', value: 20 }
+                        };
 
-                        $scope.dataset_b =  [ 
-                                { id: 0 , name: "Apples" , value: 20 },
-                                { id: 1 , name: "Pears" , value: 40 },
-                                { id: 2 , name: "Lemons" , value: 20 },
-                                { id: 3 , name: "Limes" , value: 25 },
-                                { id: 4 , name: "Strawberries" , value: 50 },
-                                { id: 5 , name: "Raspberries" , value: 80 }
-                        ];
-
-                        $scope.dataset_c =  [ 
-                                { id: 0 , name: "Apples" , value: 20 },
-                                { id: 1 , name: "Pears" , value: 40 },
-                                { id: 2 , name: "Lemons" , value: 20 },
-                                { id: 3 , name: "Limes" , value: 25 },
-                                { id: 4 , name: "Strawberries" , value: 50 },
-                                { id: 5 , name: "Raspberries" , value: 80 },
-                                { id: 6 , name: "Gooseberries" , value: 50 },
-                                { id: 7 , name: "Cranberries" , value: 80 },
-                                { id: 8 , name: "Mango" , value: 50 },
-                                { id: 9 , name: "Peach" , value: 80 },
-                        ];
+                        $scope.dataset_b =  { 
+                                d0: { id: 0, name: 'Apples', value: 5 },
+                                d1: { id: 1, name: 'Pears', value: 5 },
+                                d2: { id: 2, name: 'Peaches', value: 5 },
+                                d3: { id: 3, name: 'Apricots', value: 5 },
+                                d4: { id: 4, name: 'Kiwis', value: 15 },
+                                d5: { id: 5, name: 'Mangos', value: 15 },
+                                d6: { id: 6, name: 'Bananas', value: 20 },
+                                d7: { id: 7, name: 'Strawberries', value: 5 },
+                                d8: { id: 8, name: 'Documentation', value: 5 },
+                                d9: { id: 9, name: 'Blueberries', value: 20 }
+                        };
 
                         $scope.others =  [
-                                [ 
-                                        { id: 0 , name: "Apples" , value: 5 },
-                                        { id: 1 , name: "Pears" , value: 10 },
-                                        { id: 2 , name: "Lemons" , value: 20 },
-                                        { id: 3 , name: "Limes" , value: 15 },
-                                        { id: 4 , name: "Strawberries" , value: 20 },
-                                        { id: 5 , name: "Raspberries" , value: 10 }
-                                ],
-                                [ 
-                                        { id: 0 , name: "Apples" , value: 10 },
-                                        { id: 1 , name: "Pears" , value: 70 },
-                                        { id: 2 , name: "Lemons" , value: 10 },
-                                        { id: 3 , name: "Limes" , value: 35 },
-                                        { id: 4 , name: "Strawberries" , value: 50 },
-                                        { id: 5 , name: "Raspberries" , value: 60 }
-                                ],
-                                [ 
-                                        { id: 0 , name: "Apples" , value: 20 },
-                                        { id: 1 , name: "Pears" , value: 40 },
-                                        { id: 2 , name: "Lemons" , value: 70 },
-                                        { id: 3 , name: "Limes" , value: 25 },
-                                        { id: 4 , name: "Strawberries" , value: 50 },
-                                        { id: 5 , name: "Raspberries" , value: 80 }
-                                ],
-                                [ 
-                                        { id: 0 , name: "Apples" , value: 25 },
-                                        { id: 1 , name: "Pears" , value: 30 },
-                                        { id: 2 , name: "Lemons" , value: 20 },
-                                        { id: 3 , name: "Limes" , value: 65 },
-                                        { id: 4 , name: "Strawberries" , value: 25 },
-                                        { id: 5 , name: "Raspberries" , value: 80 }
-                                ],
+                                { 
+                                        d0: { id: 0, name: 'Apples', value: 0 },
+                                        d1: { id: 1, name: 'Pears', value: 0 },
+                                        d2: { id: 2, name: 'Peaches', value: 0 },
+                                        d3: { id: 3, name: 'Apricots', value: 30 },
+                                        d4: { id: 4, name: 'Kiwis', value: 15 },
+                                        d5: { id: 5, name: 'Mangos', value: 15 },
+                                        d6: { id: 6, name: 'Bananas', value: 20 },
+                                        d7: { id: 7, name: 'Strawberries', value: 5 },
+                                        d8: { id: 8, name: 'Documentation', value: 5 },
+                                        d9: { id: 9, name: 'Blueberries', value: 10 }
+                                },
+                                {
+                                        d0: { id: 0, name: 'Apples', value: 5 },
+                                        d1: { id: 1, name: 'Pears', value: 5 },
+                                        d2: { id: 2, name: 'Peaches', value: 5 },
+                                        d3: { id: 3, name: 'Apricots', value: 10 },
+                                        d4: { id: 4, name: 'Kiwis', value: 20 },
+                                        d5: { id: 5, name: 'Mangos', value: 10 },
+                                        d6: { id: 6, name: 'Bananas', value: 15 },
+                                        d7: { id: 7, name: 'Strawberries', value: 5 },
+                                        d8: { id: 8, name: 'Raspberries', value: 5 },
+                                        d9: { id: 9, name: 'Blueberries', value: 20 }
+                                },
+                                {
+                                        d0: { id: 0, name: 'Apples', value: 0 },
+                                        d1: { id: 1, name: 'Pears', value: 0 },
+                                        d2: { id: 2, name: 'Peaches', value: 0 },
+                                        d3: { id: 3, name: 'Apricots', value: 30 },
+                                        d4: { id: 4, name: 'Kiwis', value: 15 },
+                                        d5: { id: 5, name: 'Mangos', value: 15 },
+                                        d6: { id: 6, name: 'Bananas', value: 20 },
+                                        d7: { id: 7, name: 'Strawberries', value: 5 },
+                                        d8: { id: 8, name: 'Raspberries', value: 5 },
+                                        d9: { id: 9, name: 'Blueberries', value: 10 }
+                                },
+                                {
+                                        d0: { id: 0, name: 'Apples', value: 5 },
+                                        d1: { id: 1, name: 'Pears', value: 5 },
+                                        d2: { id: 2, name: 'Peaches', value: 5 },
+                                        d3: { id: 3, name: 'Apricots', value: 10 },
+                                        d4: { id: 4, name: 'Kiwis', value: 20 },
+                                        d5: { id: 5, name: 'Mangos', value: 10 },
+                                        d6: { id: 6, name: 'Bananas', value: 15 },
+                                        d7: { id: 7, name: 'Strawberries', value: 5 },
+                                        d8: { id: 8, name: 'Raspberries', value: 5 },
+                                        d9: { id: 9, name: 'Blueberries', value: 20 }
+                                }
                         ];
                 });
         </script>
