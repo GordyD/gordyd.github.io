@@ -106,7 +106,7 @@ ul {
 
 ul.list {
   list-style: circle;
-  margin:10px;
+  margin:10px 20px;
 }
 
 ul.list li {
