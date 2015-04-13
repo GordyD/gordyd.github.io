@@ -74,6 +74,12 @@ nav {
   color: #193441;
 }
 
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a:hover#menu-icon {
   background-color: #D1DBBD;
 }
