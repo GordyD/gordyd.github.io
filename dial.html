@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/app.css" type="text/css">
     <link rel="stylesheet" href="css/dial.css" type="text/css">
   </head>
-  <body  ng-controller="dialCtrl">
+  <body ng-controller="dialCtrl">
     <div class="container">
       <header>
         <div class="container">
@@ -28,7 +28,7 @@
         </p>
       </section>
       <section>
-        <div class="plot">
+        <div class="plot" ng-cloak>
           <ng-dial value="initialValue" animate="true"></ng-dial>
           <ng-dial value="initialValue" start-angle="10" end-angle="340" animate="true"></ng-dial>
           <ng-dial value="initialValue" start-angle="90" end-angle="180" animate="true"></ng-dial>
