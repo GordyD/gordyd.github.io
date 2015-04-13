@@ -24,7 +24,7 @@
       </header>
       <section class="intro">
         <p class="lead">
-        An Angular.js directive for an interactive dial component powered by D3.js.
+        An Angular.js directive for an interactive dial component powered by D3.js. Written by the team at <a href="https://www.workshape.io">Workshape.io</a>.
         </p>
       </section>
       <section>
@@ -35,6 +35,27 @@
           <ng-dial value="initialValue" start-angle="90" end-angle="180" animate="true"></ng-dial>
           <ng-dial value="initialValue" inner-radius="70" outerRadius="120" animate="true"></ng-dial>
         </div>
+      </section>
+
+      <section>
+        <code>
+          <pre>
+            <ng-dial value="initialValue" animate="true"></ng-dial>
+            <ng-dial value="initialValue" start-angle="10" end-angle="340" animate="true"></ng-dial>
+            <ng-dial value="initialValue" start-angle="90" end-angle="180" animate="true"></ng-dial>
+            <ng-dial value="initialValue" inner-radius="70" outerRadius="120" animate="true"></ng-dial>
+          </pre>
+        </code>
+
+        <code>
+          <pre>
+            var app = angular.module('dialExampleApp', ['ui.dial']);
+            
+            app.controller('dialCtrl', function($scope) {
+              $scope.initialValue = 28;
+            });
+          </pre>
+        </code>
       </section>
     </div>
     
