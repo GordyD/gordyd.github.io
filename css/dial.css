@@ -4,8 +4,8 @@ body {
 
 .plot svg {
     background: transparent;
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
 }
 
 svg .valueArc {
