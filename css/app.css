@@ -111,7 +111,7 @@ ul.list {
 
 ul.list li {
   margin: 4px;
-  display: block;
+  display: list item;
   float: none;
 }
 
