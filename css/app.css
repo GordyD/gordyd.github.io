@@ -104,6 +104,15 @@ ul {
   list-style: none;
 }
 
+ul.list {
+  list-style: auto;
+  margin:10px;
+}
+
+ul.list li {
+  margin: 4px;
+}
+
 li {
   display: inline-block;
   float: left;
