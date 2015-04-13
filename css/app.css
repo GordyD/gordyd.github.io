@@ -29,6 +29,10 @@ img {
   width: 100%;
 }
 
+img.fork {
+  width: inherit !important;
+}
+
 header {
   background: #193441;
   width: 100%;
