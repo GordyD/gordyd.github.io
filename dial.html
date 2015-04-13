@@ -36,8 +36,28 @@
           <ng-dial value="initialValue" inner-radius="70" outerRadius="120" animate="true"></ng-dial>
         </div>
       </section>
-
       <section>
+        <h3>Features</h3>
+        <ul>
+          <li>interactive</li>
+          <li>animated</li>
+          <li>shows previous value</li>
+          <li>2-way data binding (will respond to changes to model and update model accordingly)</li>
+        </ul>
+
+        <h3>Parameters</h3>
+
+        <ul>
+          <li>value</li> 
+          <li>animate - either true or false. Default: false</li>
+          <li>startAngle - 0-360. Default: 0</li>
+          <li>endAngle - 0-360. Default: 360</li>
+          <li>innerRadius - An integer. Default: 60</li>
+          <li>outerRadius - An integer. Default: 100</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Code Sample</h2>
         <h3>HTML</h3>
         <code>
           <pre>&lt;ng-dial value="initialValue" animate="true"&gt;&lt;/ng-dial&gt;
