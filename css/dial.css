@@ -3,7 +3,7 @@ body {
 }
 
 .plot svg {
-    background: #ccc;
+    background: transparent;
     width: 240px;
     height: 240px;
 }
