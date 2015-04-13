@@ -50,11 +50,13 @@ code pre {
   border: 1px solid rgba(0,0,0,.1);
   background: rgba(0,0,0,.05);
   border-radius: 3px;
-  padding: 15px 20px;
+  padding: 15px 20px 10px;
   font-family: monospace;
-  margin-bottom: 10px;
 }
 
+code {
+  margin-bottom: 10px;
+}
 
 #logo{
   margin: 15px;
