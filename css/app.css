@@ -105,12 +105,14 @@ ul {
 }
 
 ul.list {
-  list-style: auto;
+  list-style: square;
   margin:10px;
 }
 
 ul.list li {
   margin: 4px;
+  display: block;
+  float: none;
 }
 
 li {
