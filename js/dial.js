@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-  var ui = {};
+  var gmd = {};
 
   /**
    * @constructor
@@ -10,6 +10,8 @@
    * @param {Number} initialValue 0-100
    * @param {Number} innerRadius
    * @param {Number} outerRadius
+   * @param {Number} startAngle
+   * @param {Number} endAngle
    */
   var Knob = function(element, initialValue, innerRadius, outerRadius, startAngle, endAngle) {
     this.element = element;
@@ -92,9 +94,11 @@
   };
 
   /**
-   * Append an SVG to the element
+   * Append an SVG to the element and draw the dial component
    * 
    * @param  {Function} updateFn
+   * @param {Boolean} isAnimated
+   * 
    * @return {void}
    */
   Knob.prototype.draw = function(updateFn, isAnimated) {
@@ -216,9 +220,9 @@
     }
   }
 
-  ui.Knob = Knob;
+  gmd.Knob = Knob;
 
-  ui.dialDirective = function() {
+  gmd.dialDirective = function() {
     return  {
       restrict: 'E',
       scope: {
@@ -229,7 +233,7 @@
             outerRadius = parseInt(attrs.outerRadius, 10) || 100,
             startAngle = parseInt(attrs.startAngle, 10) || 0,
             endAngle = parseInt(attrs.endAngle, 10) || 360,
-            knob = new ui.Knob(element[0], scope.value, innerRadius, outerRadius, startAngle, endAngle);
+            knob = new gmd.Knob(element[0], scope.value, innerRadius, outerRadius, startAngle, endAngle);
 
         function update(value) {
           scope.$apply(function() {
@@ -249,6 +253,6 @@
   }
 
   angular
-  .module('ui.dial', [])
-  .directive('ngDial', ui.dialDirective);
+  .module('gmd.dial', [])
+  .directive('gmdDial', gmd.dialDirective);
 })();

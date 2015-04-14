@@ -29,11 +29,15 @@
       </section>
       <section>
         <div class="plot" ng-cloak>
-          <div class="center">Value: <strong>{{initialValue}}</strong></div>
-          <ng-dial value="initialValue" animate="true"></ng-dial>
-          <ng-dial value="initialValue" start-angle="10" end-angle="340" animate="true"></ng-dial>
-          <ng-dial value="initialValue" start-angle="90" end-angle="180" animate="true"></ng-dial>
-          <ng-dial value="initialValue" inner-radius="70" outerRadius="120" animate="true"></ng-dial>
+        <h2>2-way data binding</h2>
+        <div class="center">Value: {{initialValue}}</div>
+        <gmd-dial value="initialValue" animate="true"></gmd-dial><gmd-dial value="initialValue" start-angle="10" end-angle="340" animate="true"></gmd-dial><gmd-dial value="initialValue" start-angle="90" end-angle="180" animate="true"></gmd-dial><gmd-dial value="initialValue" inner-radius="70" outerRadius="120" animate="true"></gmd-dial>
+      </div>
+      </section>
+      <section>
+        <div class="plot" ng-cloak>
+          <h2>Firebase powered (will be updated by other users changes)</h2>
+          <gmd-dial ng-repeat="dial in liveDials" value="dial.value"></gmd-dial>
         </div>
       </section>
       <section>
@@ -77,12 +81,26 @@ app.controller('dialCtrl', function($scope) {
     </div>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>      
     <script type="text/javascript" src="js/dial.js"></script>        
     <script>
-      var app = angular.module('dialExampleApp', ['ui.dial']);
-      app.controller('dialCtrl', function($scope) {
+      var app = angular.module('dialExampleApp', ['gmd.dial', 'firebase']);
+      app.controller('dialCtrl', function($scope, $firebaseArray) {
+        var ref = new Firebase('https://ng-dial.firebaseio.com');
+
+        $scope.liveDials = $firebaseArray(ref);
         $scope.initialValue = 28;
+
+        $scope.$watch('liveDials', function(newVal, oldVal) {
+          for(var i = 0; i < newVal.length; i++) {
+            if (newVal[i].value !== oldVal[i].value) {
+              $scope.liveDials.$save(i);
+            }
+          }
+        }, true);
+
       });
     </script>
     <script>
