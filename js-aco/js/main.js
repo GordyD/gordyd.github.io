@@ -567,7 +567,7 @@ var display;
 var colony;
 
 if (problemFilename) {
-  TSPReader.read('http://localhost:8080/problems/' + problemFilename).then(function (loadedProblem) {
+  TSPReader.read('problems/' + problemFilename).then(function (loadedProblem) {
     problem = loadedProblem;
     create(problem);
   });
@@ -643,9 +643,9 @@ function updateProblem() {
     var size = val.split('-').map(function (x) {
       return x.trim();
     })[1];
-    window.location = '/js-aco?nodes=' + size;
+    window.location = '/?nodes=' + size;
   } else {
-    window.location = '/js-aco?problem=' + val + '.tsp';
+    window.location = '/?problem=' + val + '.tsp';
   }
 }
 
