@@ -643,9 +643,9 @@ function updateProblem() {
     var size = val.split('-').map(function (x) {
       return x.trim();
     })[1];
-    window.location = '/?nodes=' + size;
+    window.location = '/js-aco?nodes=' + size;
   } else {
-    window.location = '/?problem=' + val + '.tsp';
+    window.location = '/js-aco?problem=' + val + '.tsp';
   }
 }
 
