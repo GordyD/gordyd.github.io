@@ -37,6 +37,14 @@ div {
   margin-right: 5px;
 }
 
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 .problemVisual {
   margin: 0;
   padding: 10px 0;
